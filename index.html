@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>javascript</title>
+    <style>
+      .form {
+        background-color: #eee;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        margin: 20px auto;
+        border-radius: 8px;
+        border: 2px solid transparent;
+      }
+      .form .input {
+        margin-right: 15px;
+        border: none;
+        border-radius: 5px;
+        height: 35px;
+        width: 80%;
+        outline: none;
+      }
+
+      .form .add {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border: 2px solid transparent;
+        border-radius: 5px;
+      }
+      .notes {
+        background-color: #eee;
+        padding: 24px;
+        width: 600px;
+        margin: 20px auto;
+        border-radius: 8px;
+      }
+
+      .note {
+        background-color: rgb(255, 254, 254);
+        padding: 14px;
+        margin-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .note.done {
+        opacity: 0.5;
+        font-weight: bold;
+      }
+      .delete {
+        background-color: rgb(219, 100, 44);
+        color: aliceblue;
+        padding-inline: 8px;
+        padding-block: 2px;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .delete-all {
+        background-color: red;
+        border: 1px solid transparent;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        cursor: pointer;
+        color: white;
+        padding: 8px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <input type="text" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+      </div>
+      <div class="notes"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
